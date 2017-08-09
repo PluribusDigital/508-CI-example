@@ -41,16 +41,18 @@ jobs:
       - run: bundle exec rake db:schema:load
 
       # run tests!
-      - run:
-          name: run tests
-          command: rails test
+
 
       - run:
           name: run 508 scan
           command: |
             cd 508scan
-            npm install
-            npm test
+            yarn install
+            yarn test
+
+      - run:
+          name: run tests
+          command: rails test
 
       # collect reports
       # - store_test_results:
