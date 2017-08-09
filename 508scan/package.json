@@ -3,6 +3,6 @@
     "pa11y": "^4.11.0"
   },
   "scripts": {
-    "test": "rails s & sleep 10 && pa11y http://localhost:3000/signup"
+    "scan508": "rails s & sleep 10 && pa11y http://localhost:3000/signup"
   }
 }

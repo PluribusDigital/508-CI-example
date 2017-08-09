@@ -25,3 +25,5 @@
 
 # Ignore uploaded test images.
 /public/uploads
+
+/508scan/node_modules

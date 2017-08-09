@@ -51,8 +51,7 @@ jobs:
           command: |
             cd 508scan
             yarn install
-            yarn test
-
+            yarn scan508
 
       # collect reports
       # - store_test_results:
